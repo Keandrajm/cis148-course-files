@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    background-color: white;
+}
+
+a {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.4vw;
+    color: steelblue;
+    font-style: italic;
+}
+
+header {
+    padding: 1em 2%;
+    background-image: linear-gradient(to bottom, white 0%, lightsteelblue 100%);
+    border-bottom: 3px solid steelblue;
+}
+
+header h2 {
+    font-size: 1.8vw;
+}
+
+header img {
+    float: left;
+    width: 10vw;
+    min-width: 100px;
+    max-width: 120px;
+    height: auto;
+    margin-right: 1em;
+}
+
+/* NAVIGATION MENU */
+#nav_menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2%;
+    background-color: steelblue;
+}
+
+#nav_menu ul li {
+    position: relative;
+}
+
+#nav_menu ul li a {
+    display: block;
+    padding: .75em 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+/* CURRENT PAGE STYLE */
+#nav_menu ul li a.current {
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: .25em 0;
+}
+
+/* HOVER */
+#nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: black;
+}
+
+/* SUBMENU */
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background-color: steelblue;
+    min-width: 200px;
+}
+
+#nav_menu ul li:hover > ul {
+    display: flex;
+}
+
+main {
+    display: flex;
+    padding: 1em 2%;
+    gap: 2%;
+}
+
+section {
+    width: 70%;
+}
+
+section h2 {
+    margin-bottom: .5em;
+}
+
+section h3 {
+    margin: .75em 0 .25em 0;
+}
+
+section p {
+    margin-bottom: .75em;
+    line-height: 1.5;
+}
+
+blockquote {
+    margin: .5em 2em 1em 2em;
+    line-height: 1.5;
+}
+
+aside {
+    width: 28%;
+    padding: 1em;
+    border: 3px solid steelblue;
+    border-radius: 12px;
+}
+
+aside h2 {
+    color: maroon;
+    margin-bottom: .5em;
+}
+
+aside ul {
+    padding-left: 1.5em;
+}
+
+aside ul li {
+    line-height: 1.5;
+    margin-bottom: .35em;
+}
+
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+}
