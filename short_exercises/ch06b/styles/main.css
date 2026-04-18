@@ -1,0 +1,159 @@
+:root {
+	--primary-color: #931420;
+	--accent-color: #f6bb73;
+	--light-accent: #fffded;
+	--light: white;
+	--dark: black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	background-color: white;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 98%;
+	max-width: 960px;
+	margin: 0 auto;
+	border: 3px solid var(--primary-color);
+	background-color: var(--light);
+}
+
+header,
+section,
+aside,
+footer {
+	padding: 1em;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote,
+ul,
+li,
+article {
+	margin-bottom: .5em;
+}
+
+ul {
+	margin-left: 1.5em;
+}
+
+a:focus,
+a:hover {
+	font-style: italic;
+}
+
+header {
+	border-bottom: 3px solid var(--primary-color);
+	background-image: linear-gradient(
+		30deg,
+		var(--accent-color) 0%,
+		var(--light-accent) 25%,
+		var(--light) 50%,
+		var(--light-accent) 75%,
+		var(--accent-color) 100%
+	);
+	padding: 1.5em 1em;
+}
+
+header img {
+	float: left;
+	margin-right: 1em;
+}
+
+header h2 {
+	font-size: 175%;
+	color: var(--primary-color);
+	margin-bottom: .25em;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	margin-bottom: 0;
+}
+
+main {
+	clear: left;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+#left_sidebar {
+	width: 20%;
+}
+
+section {
+	width: 60%;
+	border-left: 3px solid var(--primary-color);
+	border-right: 3px solid var(--primary-color);
+}
+
+#right_sidebar {
+	width: 20%;
+}
+
+section h1 {
+	font-size: 150%;
+}
+
+section h2 {
+	font-size: 130%;
+	color: var(--primary-color);
+}
+
+section h3 {
+	font-size: 105%;
+}
+
+blockquote {
+	font-style: italic;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+article {
+	padding-top: .5em;
+}
+
+article img {
+	float: right;
+	margin: .25em 0 1em 1em;
+	border: 1px solid var(--dark);
+	max-width: 100%;
+}
+
+aside h2 {
+	font-size: 130%;
+	color: var(--primary-color);
+}
+
+aside h3 {
+	font-size: 105%;
+}
+
+aside img {
+	display: block;
+	margin-bottom: 1em;
+	max-width: 75px;
+}
+
+footer {
+	background-color: var(--primary-color);
+}
+
+footer p {
+	text-align: center;
+	color: white;
+	margin-bottom: 0;
+}

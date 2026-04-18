@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--page-bg: aliceblue;
+	--accent: rebeccapurple;
+	--body-bg: white;
+}
+
+html {
+	background-color: var(--page-bg);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	border: 6px double var(--accent);
+	background-color: var(--body-bg);
+}
+
+main {
+	padding: 1.5em;
+}
+
+footer {
+	border-top: 3px solid var(--accent);
+	padding: 1em 0;
+}
+
+h1 {
+	font-size: 150%;
+	color: var(--accent);
+	margin-bottom: .5em;
+}
+
+h2 {
+	font-size: 125%;
+	margin: 1em 0 .5em;
+	clear: left;
+}
+
+h3 {
+	font-size: 115%;
+	margin-bottom: 1em;
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 1.5;
+}
+
+blockquote {
+	margin: 0 2em 1em 2em;
+	line-height: 1.5;
+}
+
+ul {
+	margin: 0 0 1em 2em;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+cite {
+	color: var(--accent);
+	font-style: normal;
+	font-weight: bold;
+}
+
+img {
+	float: left;
+	margin: 0 1em 1em 0;
+}
+
+footer p {
+	font-size: 90%;
+	font-weight: bold;
+	text-align: center;
+	margin: .3em 0;
+}
