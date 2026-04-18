@@ -1,0 +1,157 @@
+/* VARIABLES */
+:root {
+	--primary-color: #931420;
+	--accent-color: #f6bb73;
+	--light-accent: #fffded;
+	--light: white;
+	--dark: black;
+}
+
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* BASE */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 80%;
+	margin: auto;
+	border: 3px solid var(--primary-color);
+}
+
+header, section, aside, footer {
+	padding: 1em;
+}
+
+h1, h2, h3, p, article, blockquote {
+	padding-bottom: .5em;
+}
+
+a {
+	text-decoration: none;
+	color: var(--light);
+}
+
+/* HEADER */
+header {
+	border-bottom: 3px solid var(--primary-color);
+	background-image: linear-gradient(30deg,
+		var(--accent-color),
+		var(--light-accent),
+		var(--light),
+		var(--light-accent),
+		var(--accent-color)
+	);
+}
+
+header img {
+	float: left;
+	margin: 0 30px;
+	width: clamp(40px, 15%, 66px);
+}
+
+header h2 {
+	color: var(--primary-color);
+}
+
+header h3 {
+	font-style: italic;
+}
+
+/* MAIN */
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+/* NAVBAR = CONTAINER */
+.navbar {
+	background-color: var(--primary-color);
+	position: relative;
+	z-index: 1000;
+
+	/* THIS is the key requirement */
+	container-type: inline-size;
+	container-name: nav;
+}
+
+/* HAMBURGER BUTTON */
+.menu-btn {
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+}
+
+.menu-btn::before {
+	content: "☰";
+	font-size: 1.5em;
+	color: white;
+}
+
+/* CHECKBOX */
+input[type="checkbox"] {
+	display: none;
+}
+
+/* MOBILE MENU */
+.menu {
+	display: none;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--primary-color);
+}
+
+/* SHOW MENU WHEN CLICKED */
+input[type="checkbox"]:checked + .menu-btn + .menu {
+	display: flex;
+}
+
+/* LINKS */
+.menu a {
+	display: block;
+	padding: .75em;
+	color: var(--light);
+}
+
+/* RIGHT ARROW */
+.has-submenu > a::after {
+	content: " ▶";
+	font-size: .8em;
+}
+
+/* CONTAINER QUERY (CORE OF ASSIGNMENT) */
+@container nav (min-width: 560px) {
+
+	.menu-btn {
+		display: none;
+	}
+
+	.menu {
+		display: flex !important;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+
+	.has-submenu > a::after {
+		content: " ▼";
+	}
+}
+
+/* PAGE LAYOUT */
+@media screen and (min-width: 620px) {
+
+	main {
+		flex-direction: row;
+	}
+
+	section {
+		flex-basis: 75%;
+	}
+
+	aside {
+		flex-basis: 25%;
+	}
+}
