@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    border: 3px solid steelblue;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    background: linear-gradient(to bottom, white 0%, #cfe0f2 100%);
+    border-bottom: 3px solid steelblue;
+}
+
+header img {
+    width: 100px;
+}
+
+header h1 {
+    color: steelblue;
+    font-size: 2em;
+}
+
+header h2 {
+    font-size: 1.2em;
+}
+
+/* MOBILE NAV */
+#mobile_nav {
+    background-color: steelblue;
+    padding: 0.75em;
+    margin-bottom: 1em;
+}
+
+#mobile_nav label {
+    color: white;
+    font-weight: bold;
+}
+
+#mobile_nav select {
+    width: 100%;
+    padding: 0.4em;
+    border-radius: 4px;
+}
+
+/* HIDE DESKTOP NAV ON MOBILE */
+#nav_menu {
+    display: none;
+}
+
+/* MAIN */
+main {
+    padding: 1em;
+}
+
+section {
+    width: 100%;
+}
+
+/* ASIDE */
+aside {
+    width: 100%;
+    margin-top: 1em;
+    padding: 1em;
+    border: 3px solid steelblue;
+    border-radius: 12px;
+    background-color: #f4f8fc;
+}
+
+aside h2 {
+    color: maroon;
+    margin-bottom: 0.5em;
+}
+
+aside ul {
+    padding-left: 1.5em;
+}
+
+aside li {
+    margin-bottom: 0.3em;
+}
+
+aside a {
+    color: steelblue;
+    text-decoration: underline;
+}
+
+aside a:hover {
+    color: darkorange;
+}
+
+/* TEXT */
+section h2 {
+    margin-bottom: 0.5em;
+}
+
+section h3 {
+    margin-top: 1em;
+    color: maroon;
+}
+
+section p {
+    margin-bottom: 0.75em;
+}
+
+blockquote {
+    margin: 1em;
+}
+
+/* GLOBAL LINKS */
+a {
+    color: blue;
+}
+
+a:hover {
+    color: darkorange;
+}
+
+/* FOOTER */
+footer {
+    padding: 1em;
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+}
+
+/* TABLET */
+@media (min-width: 768px) {
+
+    main {
+        display: flex;
+        gap: 2%;
+        align-items: flex-start;
+    }
+
+    section {
+        width: 70%;
+    }
+
+    aside {
+        width: 28%;
+        margin-top: 0;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 900px) {
+
+    #mobile_nav {
+        display: none;
+    }
+
+    #nav_menu {
+        display: block;
+    }
+
+    #nav_menu ul {
+        display: flex;
+        list-style: none;
+        background-color: steelblue;
+        flex-wrap: nowrap;
+    }
+
+    #nav_menu li {
+        position: relative;
+        flex: 1;
+    }
+
+    #nav_menu a {
+        display: block;
+        text-align: center;
+        padding: 0.75em;
+        color: white;
+        text-decoration: none;
+    }
+
+    #nav_menu a:hover {
+        background-color: lightsteelblue;
+        color: black;
+    }
+
+    /* SUBMENU */
+    #nav_menu ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: steelblue;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    #nav_menu li:hover > ul {
+        display: flex;
+    }
+}
