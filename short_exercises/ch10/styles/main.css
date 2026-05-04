@@ -1,0 +1,171 @@
+@font-face {
+	font-family: "Ink Free";
+	src: url("../fonts/Inkfree.ttf") format("truetype");
+}
+
+/* variables */
+:root {
+	--primary-color: #931420;
+	--accent-color: #f6bb73;
+	--light-accent: #fffded;
+	--light: white;
+	--dark: black;
+	--main-link-color: #d98b4e; /* 65% accent + 35% primary */
+}
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* default styles */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	width: 80%;
+	margin: auto;
+	border: 3px solid var(--primary-color);
+}
+
+header, section, aside, footer { 
+	padding: 1em; 
+}
+
+h1, h2, h3, p, article, blockquote { 
+	padding-bottom: .5em; 
+}
+
+h1 { 
+	font-family: "Ink Free", Arial, Helvetica, sans-serif;
+	font-size: 150%; 
+}
+
+h2 { font-size: 120%; }
+h3 { font-size: 110%; }
+
+a:focus, a:hover { 
+	font-style: italic; 
+}
+
+ul { list-style-type: none; }
+li { padding-bottom: .75em; }
+
+/* header */
+header {
+	border-bottom: 3px solid var(--primary-color);
+	background-image: linear-gradient(30deg, 
+		var(--accent-color) 0%, 
+		var(--light-accent) 25%, 
+		var(--light) 50%, 
+		var(--light-accent) 75%, 
+		var(--accent-color) 100%);
+}
+
+header h2 {
+	font-size: 175%;
+	color: var(--primary-color);
+	padding-bottom: 0;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+
+header img {
+	float: left;
+	margin: 0 30px;
+	width: clamp(40px, 15%, 66px);
+}
+
+/* main layout */
+main {
+	clear: left;
+	display: flex;
+}
+
+/* section */
+section {
+	flex-basis: 75%;
+}
+
+section h1 {
+	padding-top: .5em;
+}
+
+section h2 {
+	color: var(--primary-color);
+}
+
+section article + h2 {
+	clear: left;
+	border-top: 3px solid var(--primary-color);
+	padding-top: .5em;
+}
+
+section blockquote {
+	font-style: italic;
+	margin-left: 2em;
+}
+
+/* MAIN CONTENT LINK COLOR (assignment requirement) */
+section a {
+	color: var(--main-link-color);
+}
+
+/* article */
+article {
+	border-top: 3px solid var(--primary-color);
+	padding-top: .5em;
+	margin-bottom: .5em;
+}
+
+/* figure (replaces image) */
+article figure {
+	float: left;
+	margin: .25em 1em 1em 0;
+	width: min(100%, 225px);
+}
+
+article figcaption {
+	text-align: center;
+	padding-bottom: .25em;
+}
+
+article figure img {
+	border: 1px solid var(--dark);
+	width: 100%;
+	display: block;
+}
+
+/* contact icons */
+section li i {
+	color: var(--primary-color);
+	width: 1.25em;
+}
+
+/* aside */
+aside {
+	flex-basis: 25%;
+}
+
+aside h2 {
+	color: var(--primary-color);
+}
+
+aside img {
+	margin-bottom: .9em;
+}
+
+/* footer */
+footer {
+	background-color: var(--primary-color);
+}
+
+footer p {
+	text-align: center;
+	color: white;
+	padding-bottom: 0; 
+}
