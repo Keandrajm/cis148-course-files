@@ -1,0 +1,92 @@
+/* =========================
+   CALORIE COUNTER TITLE
+========================= */
+
+section h2 {
+    text-align: center;
+    color: maroon;
+    margin-bottom: .5em;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 92%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid steelblue;
+    font-size: 85%;
+    background-color: white;
+}
+
+/* HEADER */
+
+thead {
+    background-color: steelblue;
+    color: white;
+}
+
+th {
+    padding: .35em .6em;
+    text-align: left;
+    border: 1px solid steelblue;
+}
+
+/* CELLS */
+
+td {
+    padding: .3em .5em;
+    border: 1px solid steelblue;
+    vertical-align: top;
+}
+
+/* CATEGORY COLUMN */
+
+.category {
+    font-weight: bold;
+    width: 24%;
+}
+
+/* RIGHT ALIGN CALORIES */
+
+td:last-child,
+th:last-child {
+    text-align: right;
+    width: 12%;
+}
+
+/* =========================
+   ASIDE SPACING
+========================= */
+
+aside {
+    margin-top: 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    main {
+        display: block;
+    }
+
+    section,
+    aside {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        font-size: 75%;
+    }
+
+    th,
+    td {
+        padding: .25em;
+    }
+}
