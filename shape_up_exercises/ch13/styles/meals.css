@@ -1,0 +1,159 @@
+/* =============================
+   MEAL PLAN FORM
+============================= */
+
+section h2 {
+    color: black;
+    margin-bottom: .3em;
+}
+
+section p {
+    font-size: 90%;
+    margin-bottom: .7em;
+}
+
+form {
+    width: 88%;
+    max-width: 500px;
+}
+
+/* =============================
+   FIELDSETS
+============================= */
+
+fieldset {
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .6em .9em .9em;
+    margin-bottom: 1em;
+}
+
+legend {
+    color: maroon;
+    font-weight: bold;
+    padding: 0 .35em;
+}
+
+label {
+    display: block;
+    font-size: 90%;
+    margin-bottom: .25em;
+}
+
+.inline {
+    display: inline;
+    margin-right: .75em;
+}
+
+span {
+    color: red;
+}
+
+/* =============================
+   INPUTS
+============================= */
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: .4em;
+    margin-bottom: .6em;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 2px solid red;
+}
+
+select {
+    border: 1px solid #999;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-left: .25em;
+    margin-right: .25em;
+}
+
+fieldset p {
+    margin-top: .4em;
+    margin-bottom: .4em;
+}
+
+textarea {
+    height: 80px;
+    resize: vertical;
+    border: 1px solid #999;
+    margin-top: .5em;
+}
+
+/* =============================
+   BUTTONS
+============================= */
+
+.button-group {
+    padding: 1em 1.5em;
+}
+
+.btn {
+    width: 90px;
+    padding: .65em 1em;
+    border-radius: 7px;
+    border: 2px solid #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1.5em;
+}
+
+.submit-btn {
+    background-color: steelblue;
+}
+
+.reset-btn {
+    background-color: maroon;
+}
+
+.submit-btn:hover {
+    background-color: #2d5f87;
+}
+
+.reset-btn:hover {
+    background-color: darkred;
+}
+
+/* =============================
+   ACCESSIBILITY
+============================= */
+
+.sr-only {
+    position: absolute;
+    left: -9999px;
+}
+
+/* =============================
+   SMALL SCREEN
+============================= */
+
+@media screen and (max-width: 767px) {
+    main {
+        display: block;
+    }
+
+    section,
+    aside {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: .75em;
+    }
+}

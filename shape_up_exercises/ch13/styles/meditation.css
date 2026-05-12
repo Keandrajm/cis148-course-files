@@ -1,0 +1,17 @@
+video {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0.5em 0 1.5em;
+}
+
+audio {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 0.75em 0 1.25em;
+}
+
+section h3 {
+    color: maroon;
+}
